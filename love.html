@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take My Hand</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="couple-style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="scene">
+            <!-- Animated Couple -->
+            <div class="couple">
+                <div class="person person-left">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm arm-left"></div>
+                </div>
+                <div class="person person-right">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm arm-right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <h1>Will You Take My Hand?</h1>
+            <button id="take-hand-button">Hold My Hand</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("take-hand-button").addEventListener("click", () => {
+            window.location.href = "END.html"; // Navigate to index.html
+        });
+    </script>
+</body>
+</html>
